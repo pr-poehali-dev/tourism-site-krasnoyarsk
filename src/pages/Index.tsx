@@ -204,11 +204,15 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Запишитесь на поход
+              Забронировать место в походе
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-4">
               Оставьте заявку, и мы свяжемся с вами для уточнения деталей
             </p>
+            <a href="tel:+79876543210" className="inline-flex items-center gap-2 text-xl font-semibold text-primary hover:text-primary/80 transition-colors">
+              <Icon name="Phone" size={24} />
+              +7 (987) 654-32-10
+            </a>
           </div>
 
           <Card className="shadow-xl">
