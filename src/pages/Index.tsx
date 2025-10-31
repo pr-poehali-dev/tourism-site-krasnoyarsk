@@ -101,7 +101,7 @@ const Index = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Выберите приключение по душе — от семейных прогулок до экстремальных походов
             </p>
-            <div className="mt-8">
+            <div className="mt-8 space-y-3">
               <a 
                 href="https://t.me/hikingmountainsrafting" 
                 target="_blank" 
@@ -111,6 +111,9 @@ const Index = () => {
                 <Icon name="Send" size={20} />
                 <span className="font-semibold">Смотрите фото и видео походов в Telegram</span>
               </a>
+              <p className="text-sm text-muted-foreground italic">
+                📅 Все цены и даты проведения походов находятся в нашем Telegram-канале
+              </p>
             </div>
           </div>
 
