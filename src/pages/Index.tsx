@@ -101,6 +101,17 @@ const Index = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Выберите приключение по душе — от семейных прогулок до экстремальных походов
             </p>
+            <div className="mt-8">
+              <a 
+                href="https://t.me/hikingmountainsrafting" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-all duration-300 hover:scale-105 shadow-md"
+              >
+                <Icon name="Send" size={20} />
+                <span className="font-semibold">Смотрите фото и видео походов в Telegram</span>
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -137,9 +148,23 @@ const Index = () => {
                       <span>{route.distance}</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-primary hover:bg-primary/90">
-                    Записаться
-                  </Button>
+                  <div className="space-y-2">
+                    <Button 
+                      className="w-full bg-primary hover:bg-primary/90"
+                      onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      Записаться
+                    </Button>
+                    <a 
+                      href="https://t.me/hikingmountainsrafting" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 w-full px-4 py-2 text-sm text-secondary-foreground hover:underline"
+                    >
+                      <Icon name="ExternalLink" size={16} />
+                      Подробнее в Telegram
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -147,7 +172,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 md:px-8 bg-background">
+      <section className="py-16 px-4 md:px-8 bg-background" id="booking">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
