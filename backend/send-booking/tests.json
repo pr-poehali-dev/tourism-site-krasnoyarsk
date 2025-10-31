@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "name": "Handle OPTIONS request",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Send booking request",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Тестовый",
+        "phone": "+79991234567",
+        "message": "Хочу записаться на поход"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
